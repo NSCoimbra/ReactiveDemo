@@ -17,6 +17,9 @@
 		C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE501BB0C89200FE6DB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE541BB0CD5400FE6DB1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidJSON.json; sourceTree = "<group>"; };
 		C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingUtility.swift; sourceTree = "<group>"; };
 		C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InvalidJSON.json; sourceTree = "<group>"; };
+		C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence_Test.swift; sourceTree = "<group>"; };
+		C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */,
+				C7F5EE4E1BB0C86B00FE6DB1 /* Persistence */,
 				C7F5EE3A1BB0B6BA00FE6DB1 /* Parser */,
 				C7F5EE371BB0B67E00FE6DB1 /* Model */,
 				C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */,
@@ -102,6 +109,7 @@
 				C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */,
 				C7F5EE431BB0BF6E00FE6DB1 /* MockData */,
 				C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */,
+				C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */,
 			);
 			path = DemoCoimbraTests;
 			sourceTree = "<group>";
@@ -138,6 +146,15 @@
 				C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F5EE4E1BB0C86B00FE6DB1 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */,
+				C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F5EE541BB0CD5400FE6DB1 /* Date+Extension.swift in Sources */,
 				C7F5EE3E1BB0B80700FE6DB1 /* Parser.swift in Sources */,
+				C7F5EE501BB0C89200FE6DB1 /* Persistence.swift in Sources */,
 				C7F5EE401BB0B8D700FE6DB1 /* Order+Decodable.swift in Sources */,
 				C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */,
 			);
@@ -278,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */,
 				C7F5EE421BB0BEB600FE6DB1 /* Order+Decodable_Test.swift in Sources */,
 				C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */,
 			);

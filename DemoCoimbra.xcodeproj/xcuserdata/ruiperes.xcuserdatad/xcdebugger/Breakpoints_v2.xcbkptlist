@@ -2,4 +2,70 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbraTests/Persistence_Test.swift"
+            timestampString = "464571582.468229"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "test_Writting_Existence()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Persistence_Test.test_Writting_Existence (DemoCoimbraTests.Persistence_Test)() -&gt; ()"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Persistence_Test.swift"
+                  timestampString = "464571938.466448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Persistence_Test.(test_Writting_Existence (DemoCoimbraTests.Persistence_Test) -&gt; () -&gt; ()).(implicit closure #1)"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Persistence_Test.swift"
+                  timestampString = "464571938.466779"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbraTests/Persistence_Test.swift"
+            timestampString = "464571844.715051"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "test_Writting_Date()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
