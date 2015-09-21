@@ -10,7 +10,7 @@
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE2A1BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE291BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift */; };
-		C7F5EE361BB0B57200FE6DB1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE351BB0B57200FE6DB1 /* Order.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE381BB0B67E00FE6DB1 /* Order.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		C7F5EE241BB0B3DA00FE6DB1 /* DemoCoimbraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCoimbraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F5EE291BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCoimbraTests.swift; sourceTree = "<group>"; };
 		C7F5EE2B1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7F5EE351BB0B57200FE6DB1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C7F5EE381BB0B67E00FE6DB1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */,
-				C7F5EE341BB0B50600FE6DB1 /* Model */,
+				C7F5EE371BB0B67E00FE6DB1 /* Model */,
 				C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */,
 			);
 			path = DemoCoimbra;
@@ -89,10 +89,10 @@
 			path = DemoCoimbraTests;
 			sourceTree = "<group>";
 		};
-		C7F5EE341BB0B50600FE6DB1 /* Model */ = {
+		C7F5EE371BB0B67E00FE6DB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C7F5EE351BB0B57200FE6DB1 /* Order.swift */,
+				C7F5EE381BB0B67E00FE6DB1 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F5EE361BB0B57200FE6DB1 /* Order.swift in Sources */,
+				C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
