@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE2A1BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE291BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift */; };
 		C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE381BB0B67E00FE6DB1 /* Order.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE3C1BB0B7F900FE6DB1 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */; };
 		C7F5EE3E1BB0B80700FE6DB1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE401BB0B8D700FE6DB1 /* Order+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE421BB0BEB600FE6DB1 /* Order+Decodable_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +34,15 @@
 		C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCoimbra.h; sourceTree = "<group>"; };
 		C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F5EE241BB0B3DA00FE6DB1 /* DemoCoimbraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCoimbraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7F5EE291BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCoimbraTests.swift; sourceTree = "<group>"; };
 		C7F5EE2B1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F5EE381BB0B67E00FE6DB1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
+		C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = ../Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
 		C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+Decodable.swift"; sourceTree = "<group>"; };
+		C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+Decodable_Test.swift"; sourceTree = "<group>"; };
+		C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidJSON.json; sourceTree = "<group>"; };
+		C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingUtility.swift; sourceTree = "<group>"; };
+		C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InvalidJSON.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,7 @@
 		C7F5EE101BB0B3DA00FE6DB1 = {
 			isa = PBXGroup;
 			children = (
-				C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */,
+				C7F5EE4D1BB0C55B00FE6DB1 /* Frameworks */,
 				C7F5EE1C1BB0B3DA00FE6DB1 /* DemoCoimbra */,
 				C7F5EE281BB0B3DA00FE6DB1 /* DemoCoimbraTests */,
 				C7F5EE1B1BB0B3DA00FE6DB1 /* Products */,
@@ -90,8 +98,10 @@
 		C7F5EE281BB0B3DA00FE6DB1 /* DemoCoimbraTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7F5EE291BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift */,
 				C7F5EE2B1BB0B3DA00FE6DB1 /* Info.plist */,
+				C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */,
+				C7F5EE431BB0BF6E00FE6DB1 /* MockData */,
+				C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */,
 			);
 			path = DemoCoimbraTests;
 			sourceTree = "<group>";
@@ -100,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F5EE381BB0B67E00FE6DB1 /* Order.swift */,
+				C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +121,23 @@
 				C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		C7F5EE431BB0BF6E00FE6DB1 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */,
+				C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		C7F5EE4D1BB0C55B00FE6DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +162,7 @@
 				C7F5EE161BB0B3DA00FE6DB1 /* Frameworks */,
 				C7F5EE171BB0B3DA00FE6DB1 /* Headers */,
 				C7F5EE181BB0B3DA00FE6DB1 /* Resources */,
+				C7F5EE4C1BB0C3A500FE6DB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,10 +239,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */,
+				C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7F5EE4C1BB0C3A500FE6DB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Decodable.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7F5EE151BB0B3DA00FE6DB1 /* Sources */ = {
@@ -221,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE3E1BB0B80700FE6DB1 /* Parser.swift in Sources */,
+				C7F5EE401BB0B8D700FE6DB1 /* Order+Decodable.swift in Sources */,
 				C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F5EE2A1BB0B3DA00FE6DB1 /* DemoCoimbraTests.swift in Sources */,
+				C7F5EE421BB0BEB600FE6DB1 /* Order+Decodable_Test.swift in Sources */,
+				C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +394,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(SRCROOT)/Carthage/Build/iOS/",
 				);
 				INFOPLIST_FILE = DemoCoimbra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -366,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(SRCROOT)/Carthage/Build/iOS/",
 				);
 				INFOPLIST_FILE = DemoCoimbra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -379,16 +431,21 @@
 		C7F5EE321BB0B3DA00FE6DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				INFOPLIST_FILE = DemoCoimbraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aphely.DemoCoimbraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C7F5EE331BB0B3DA00FE6DB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				INFOPLIST_FILE = DemoCoimbraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aphely.DemoCoimbraTests;
