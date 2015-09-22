@@ -17,16 +17,16 @@ class Parse_Test: XCTestCase {
     func test_validData() {
         
         let data = readFile("ValidJSON")
-        let orders = parseOrders(data)
-        
-        XCTAssert(orders.value!.count == 6)
+        parseOrders(data, completion: {(orders, _) in
+            XCTAssert(orders!.count == 6)
+        })
     }
     
     func test_invalidData() {
         
         let data = readFile("InvalidJSON")
-        let orders = parseOrders(data)
-        
-        XCTAssert(orders.error! == .Parsing)
+        parseOrders(data, completion: {(_, error) in
+            XCTAssert(error! == .Parsing)
+        })
     }
 }

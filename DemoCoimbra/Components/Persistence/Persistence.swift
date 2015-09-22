@@ -7,49 +7,41 @@
 //
 
 import Foundation
-import Result
 
-func writeDataToFile(fullPath: String, data: NSData) -> Result<NSData, Error> {
+func writeDataToFile(fullPath: String, data: NSData, completion: (Error?) -> ()) {
     
-    do {
-        try data.writeToFile(fullPath, options: [.DataWritingAtomic])
-        return Result(value: data)
+    if let _ = try? data.writeToFile(fullPath, options: [.DataWritingAtomic]) {
+        completion(nil)
     }
-    catch {
-        return Result(error: .Persistence)
+    else {
+        return completion(.Persistence)
     }
 }
 
-func readDataFromFile(fullPath: String) -> Result<NSData, Error> {
+func readDataFromFile(fullPath: String, completion: (NSData?, Error?) -> ())  {
     
-    do {
-        let data =  try NSData(contentsOfFile: fullPath, options: [.DataReadingUncached])
-        return Result(value: data)
+    if let data = try? NSData(contentsOfFile: fullPath, options: [.DataReadingUncached]) {
+        completion(data, nil)
     }
-    catch {
-        return Result(error: .Persistence)
+    else {
+        return completion(nil, .Persistence)
     }
 }
 
-func doesFileExists(fullPath: String) -> Result<Bool, Error>  {
+func doesFileExists(fullPath: String, completion: Bool -> ())  {
     
-    return Result(value: NSFileManager().fileExistsAtPath(fullPath))
+    return completion(NSFileManager().fileExistsAtPath(fullPath))
 }
 
-func fileCreationDate(fullPath: String) -> Result<NSDate, Error> {
+func fileCreationDate(fullPath: String, completion: (NSDate?, Error?) -> ()) {
     
-    do {
-        
-        let attributes = try NSFileManager.defaultManager().attributesOfItemAtPath(fullPath)
-        if let creationDate = attributes[NSFileCreationDate] as? NSDate {
-            return Result(value: creationDate)
-        }
-        else {
-            return Result(error: .Persistence)
-        }
+    if let attributes = try? NSFileManager.defaultManager().attributesOfItemAtPath(fullPath),
+        let creationDate = attributes[NSFileCreationDate] as? NSDate {
+            
+            return completion(creationDate, nil)
     }
-    catch {
-        return Result(error: .Persistence)
+    else {
+        return completion(nil, .Persistence)
     }
 }
 
