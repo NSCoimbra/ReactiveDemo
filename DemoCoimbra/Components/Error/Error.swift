@@ -12,4 +12,5 @@ enum Error {
     
     case Parsing
     case Persistence
+    case Networking
 }

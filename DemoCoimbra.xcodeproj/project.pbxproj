@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D21BB215BD001AE0E5 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */; settings = {ASSET_TAGS = (); }; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C76E83D21BB215BD001AE0E5 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoCoimbra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCoimbra.h; sourceTree = "<group>"; };
 		C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76E83D11BB215B3001AE0E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C76E83D21BB215BD001AE0E5 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		C7F5EE101BB0B3DA00FE6DB1 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		C7F5EE571BB0D16700FE6DB1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C76E83D11BB215B3001AE0E5 /* Network */,
 				C7F5EE581BB0D16700FE6DB1 /* Error */,
 				C7F5EE591BB0D16700FE6DB1 /* Model */,
 				C7F5EE5C1BB0D16700FE6DB1 /* Parser */,
@@ -298,6 +309,7 @@
 				C7F5EE611BB0D16700FE6DB1 /* Order+Decodable.swift in Sources */,
 				C7F5EE631BB0D16700FE6DB1 /* Parser.swift in Sources */,
 				C7F5EE671BB0D16F00FE6DB1 /* Error.swift in Sources */,
+				C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */,
 				C7F5EE651BB0D16700FE6DB1 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
