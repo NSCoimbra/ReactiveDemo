@@ -7,47 +7,49 @@
 //
 
 import Foundation
+import Result
 
-func writeDataToFile(fullPath: String, data: NSData) -> NSData? {
+func writeDataToFile(fullPath: String, data: NSData) -> Result<NSData, Error> {
     
     do {
         try data.writeToFile(fullPath, options: [.DataWritingAtomic])
-        return data
+        return Result(value: data)
     }
     catch {
-        return nil
+        return Result(error: .Persistence)
     }
 }
 
-func readDataFromFile(fullPath: String) -> NSData? {
+func readDataFromFile(fullPath: String) -> Result<NSData, Error> {
     
     do {
-        return try NSData(contentsOfFile: fullPath, options: [.DataReadingUncached])
+        let data =  try NSData(contentsOfFile: fullPath, options: [.DataReadingUncached])
+        return Result(value: data)
     }
     catch {
-        return nil
+        return Result(error: .Persistence)
     }
 }
 
-func doesFileExists(fullPath: String) -> Bool  {
+func doesFileExists(fullPath: String) -> Result<Bool, Error>  {
     
-    return NSFileManager().fileExistsAtPath(fullPath)
+    return Result(value: NSFileManager().fileExistsAtPath(fullPath))
 }
 
-func fileCreationDate(fullPath: String) -> NSDate? {
+func fileCreationDate(fullPath: String) -> Result<NSDate, Error> {
     
     do {
         
         let attributes = try NSFileManager.defaultManager().attributesOfItemAtPath(fullPath)
         if let creationDate = attributes[NSFileCreationDate] as? NSDate {
-            return creationDate
+            return Result(value: creationDate)
         }
         else {
-            return nil
+            return Result(error: .Persistence)
         }
     }
     catch {
-        return nil
+        return Result(error: .Persistence)
     }
 }
 

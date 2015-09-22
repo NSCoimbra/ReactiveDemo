@@ -8,17 +8,18 @@
 
 import Foundation
 import Decodable
+import Result
 
-func parseOrders(ordersData: NSData) -> [Order]? {
+func parseOrders(ordersData: NSData) -> Result<[Order], Error> {
     
     do {
         let json = try NSJSONSerialization.JSONObjectWithData(ordersData, options: NSJSONReadingOptions.MutableContainers)
         let orders =  try [Order].decode(json)
         
-        return orders
+        return Result(value: orders)
     }
     catch _ {
-        return nil
+        return Result(error: .Parsing)
     }
 }
 

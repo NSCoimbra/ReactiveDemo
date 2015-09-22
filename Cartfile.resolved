@@ -1,1 +1,2 @@
 github "Anviking/Decodable" "v0.3.2"
+github "antitypical/Result" "0.5"

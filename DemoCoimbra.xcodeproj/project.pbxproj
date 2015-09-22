@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE381BB0B67E00FE6DB1 /* Order.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE3C1BB0B7F900FE6DB1 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */; };
-		C7F5EE3E1BB0B80700FE6DB1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE401BB0B8D700FE6DB1 /* Order+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE421BB0BEB600FE6DB1 /* Order+Decodable_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE501BB0C89200FE6DB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */; settings = {ASSET_TAGS = (); }; };
-		C7F5EE541BB0CD5400FE6DB1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE561BB0D12A00FE6DB1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE551BB0D12A00FE6DB1 /* Result.framework */; };
+		C7F5EE611BB0D16700FE6DB1 /* Order+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE5A1BB0D16700FE6DB1 /* Order+Decodable.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE621BB0D16700FE6DB1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE5B1BB0D16700FE6DB1 /* Order.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE631BB0D16700FE6DB1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE5D1BB0D16700FE6DB1 /* Parser.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE641BB0D16700FE6DB1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE5F1BB0D16700FE6DB1 /* Date+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE651BB0D16700FE6DB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE601BB0D16700FE6DB1 /* Persistence.swift */; settings = {ASSET_TAGS = (); }; };
+		C7F5EE671BB0D16F00FE6DB1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE661BB0D16F00FE6DB1 /* Error.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +40,19 @@
 		C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7F5EE241BB0B3DA00FE6DB1 /* DemoCoimbraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCoimbraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F5EE2B1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7F5EE381BB0B67E00FE6DB1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = ../Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
-		C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+Decodable.swift"; sourceTree = "<group>"; };
-		C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+Decodable_Test.swift"; sourceTree = "<group>"; };
+		C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse_Test.swift; sourceTree = "<group>"; };
 		C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidJSON.json; sourceTree = "<group>"; };
 		C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingUtility.swift; sourceTree = "<group>"; };
 		C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InvalidJSON.json; sourceTree = "<group>"; };
-		C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence_Test.swift; sourceTree = "<group>"; };
-		C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C7F5EE551BB0D12A00FE6DB1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
+		C7F5EE5A1BB0D16700FE6DB1 /* Order+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+Decodable.swift"; sourceTree = "<group>"; };
+		C7F5EE5B1BB0D16700FE6DB1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C7F5EE5D1BB0D16700FE6DB1 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C7F5EE5F1BB0D16700FE6DB1 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		C7F5EE601BB0D16700FE6DB1 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C7F5EE661BB0D16F00FE6DB1 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F5EE561BB0D12A00FE6DB1 /* Result.framework in Frameworks */,
 				C7F5EE3C1BB0B7F900FE6DB1 /* Decodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,9 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */,
-				C7F5EE4E1BB0C86B00FE6DB1 /* Persistence */,
-				C7F5EE3A1BB0B6BA00FE6DB1 /* Parser */,
-				C7F5EE371BB0B67E00FE6DB1 /* Model */,
+				C7F5EE571BB0D16700FE6DB1 /* Components */,
 				C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */,
 			);
 			path = DemoCoimbra;
@@ -108,27 +111,10 @@
 				C7F5EE2B1BB0B3DA00FE6DB1 /* Info.plist */,
 				C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */,
 				C7F5EE431BB0BF6E00FE6DB1 /* MockData */,
-				C7F5EE411BB0BEB600FE6DB1 /* Order+Decodable_Test.swift */,
+				C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */,
 				C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */,
 			);
 			path = DemoCoimbraTests;
-			sourceTree = "<group>";
-		};
-		C7F5EE371BB0B67E00FE6DB1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C7F5EE381BB0B67E00FE6DB1 /* Order.swift */,
-				C7F5EE3F1BB0B8D700FE6DB1 /* Order+Decodable.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C7F5EE3A1BB0B6BA00FE6DB1 /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				C7F5EE3D1BB0B80700FE6DB1 /* Parser.swift */,
-			);
-			path = Parser;
 			sourceTree = "<group>";
 		};
 		C7F5EE431BB0BF6E00FE6DB1 /* MockData */ = {
@@ -143,16 +129,53 @@
 		C7F5EE4D1BB0C55B00FE6DB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7F5EE551BB0D12A00FE6DB1 /* Result.framework */,
 				C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7F5EE4E1BB0C86B00FE6DB1 /* Persistence */ = {
+		C7F5EE571BB0D16700FE6DB1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C7F5EE4F1BB0C89200FE6DB1 /* Persistence.swift */,
-				C7F5EE531BB0CD5400FE6DB1 /* Date+Extension.swift */,
+				C7F5EE581BB0D16700FE6DB1 /* Error */,
+				C7F5EE591BB0D16700FE6DB1 /* Model */,
+				C7F5EE5C1BB0D16700FE6DB1 /* Parser */,
+				C7F5EE5E1BB0D16700FE6DB1 /* Persistence */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C7F5EE581BB0D16700FE6DB1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE661BB0D16F00FE6DB1 /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C7F5EE591BB0D16700FE6DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE5A1BB0D16700FE6DB1 /* Order+Decodable.swift */,
+				C7F5EE5B1BB0D16700FE6DB1 /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7F5EE5C1BB0D16700FE6DB1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE5D1BB0D16700FE6DB1 /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		C7F5EE5E1BB0D16700FE6DB1 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C7F5EE5F1BB0D16700FE6DB1 /* Date+Extension.swift */,
+				C7F5EE601BB0D16700FE6DB1 /* Persistence.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -271,6 +294,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Decodable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
@@ -285,11 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F5EE541BB0CD5400FE6DB1 /* Date+Extension.swift in Sources */,
-				C7F5EE3E1BB0B80700FE6DB1 /* Parser.swift in Sources */,
-				C7F5EE501BB0C89200FE6DB1 /* Persistence.swift in Sources */,
-				C7F5EE401BB0B8D700FE6DB1 /* Order+Decodable.swift in Sources */,
-				C7F5EE391BB0B67E00FE6DB1 /* Order.swift in Sources */,
+				C7F5EE621BB0D16700FE6DB1 /* Order.swift in Sources */,
+				C7F5EE641BB0D16700FE6DB1 /* Date+Extension.swift in Sources */,
+				C7F5EE611BB0D16700FE6DB1 /* Order+Decodable.swift in Sources */,
+				C7F5EE631BB0D16700FE6DB1 /* Parser.swift in Sources */,
+				C7F5EE671BB0D16F00FE6DB1 /* Error.swift in Sources */,
+				C7F5EE651BB0D16700FE6DB1 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */,
-				C7F5EE421BB0BEB600FE6DB1 /* Order+Decodable_Test.swift in Sources */,
+				C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */,
 				C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

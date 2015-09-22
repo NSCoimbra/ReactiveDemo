@@ -1,5 +1,5 @@
 //
-//  Order+Decodable_Test.swift
+//  Parse_Test.swift
 //  DemoCoimbra
 //
 //  Created by Rui Peres on 21/09/2015.
@@ -7,17 +7,19 @@
 //
 
 import XCTest
-@testable import DemoCoimbra
-import Decodable
 
-class Order_Decodable_Test: XCTestCase {
+import Decodable
+import Result
+@testable import DemoCoimbra
+
+class Parse_Test: XCTestCase {
     
     func test_validData() {
         
         let data = readFile("ValidJSON")
         let orders = parseOrders(data)
         
-        XCTAssert(orders!.count == 6)
+        XCTAssert(orders.value!.count == 6)
     }
     
     func test_invalidData() {
@@ -25,6 +27,6 @@ class Order_Decodable_Test: XCTestCase {
         let data = readFile("InvalidJSON")
         let orders = parseOrders(data)
         
-        XCTAssert(orders == nil)
+        XCTAssert(orders.error! == .Parsing)
     }
 }
