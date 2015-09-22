@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C777300A1BB0DC2B002E3C53 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE551BB0D12A00FE6DB1 /* Result.framework */; };
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE3C1BB0B7F900FE6DB1 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE3B1BB0B7F900FE6DB1 /* Decodable.framework */; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C777300A1BB0DC2B002E3C53 /* Result.framework in Frameworks */,
 				C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DemoCoimbraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aphely.DemoCoimbraTests;
@@ -490,7 +495,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DemoCoimbraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aphely.DemoCoimbraTests;
@@ -517,6 +525,7 @@
 				C7F5EE301BB0B3DA00FE6DB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7F5EE311BB0B3DA00FE6DB1 /* Build configuration list for PBXNativeTarget "DemoCoimbraTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				C7F5EE331BB0B3DA00FE6DB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

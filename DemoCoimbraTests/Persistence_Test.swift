@@ -19,37 +19,37 @@ class Persistence_Test: XCTestCase {
         removeTestFile(fileName)
     }
 
-//    func test_Writting_Reading() {
-//     
-//        let fileLocation = appendRelativePathToRoot(fileName)
-//        let data = readFile("ValidJSON")
-//        writeDataToFile(fileLocation, data: data)
-//        
-//        let readData = readDataFromFile(fileLocation)
-//        
-//        XCTAssertEqual(data.length, readData.value!.length)
-//    }
-//    
-//    func test_Writting_Existence() {
-//        
-//        let fileLocation = appendRelativePathToRoot(fileName)
-//        let data = readFile("ValidJSON")
-//        writeDataToFile(fileLocation, data: data)
-//        
-//        let doesFileExist = doesFileExists(fileLocation)
-//        
-//        XCTAssertTrue(doesFileExist.value!)
-//    }
-//    
-//    func test_Writting_Date() {
-//        
-//        let fileLocation = appendRelativePathToRoot(fileName)
-//        let data = readFile("ValidJSON")
-//        writeDataToFile(fileLocation, data: data)
-//
-//        let date = fileCreationDate(fileLocation)
-//        let isLaterThan6Seconds = dateLaterThan(date.value!, minutes: 0.1)
-//        
-//        XCTAssertFalse(isLaterThan6Seconds)
-//    }
+    func test_Writting_Reading() {
+     
+        let fileLocation = appendRelativePathToRoot(fileName)
+        let data = readFile("ValidJSON")
+        writeDataToFile(fileLocation, data: data)
+        
+        let readData = readDataFromFile(fileLocation)
+        
+        XCTAssertEqual(data.length, readData.value!.length)
+    }
+    
+    func test_Writting_Existence() {
+        
+        let fileLocation = appendRelativePathToRoot(fileName)
+        let data = readFile("ValidJSON")
+        writeDataToFile(fileLocation, data: data)
+        
+        let doesFileExist = doesFileExists(fileLocation)
+        
+        XCTAssertTrue(doesFileExist.value!)
+    }
+    
+    func test_Writting_Date() {
+        
+        let fileLocation = appendRelativePathToRoot(fileName)
+        let data = readFile("ValidJSON")
+        writeDataToFile(fileLocation, data: data)
+
+        let date = fileCreationDate(fileLocation)
+        let isLaterThan6Seconds = dateLaterThan(date.value!, minutes: 0.1)
+        
+        XCTAssertFalse(isLaterThan6Seconds)
+    }
 }
