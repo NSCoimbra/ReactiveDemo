@@ -1,0 +1,10 @@
+framework module DVR {
+  umbrella header "DVR.h"
+
+  export *
+  module * { export * }
+}
+
+module DVR.Swift {
+    header "DVR-Swift.h"
+}

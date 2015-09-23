@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; };
+		C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C765C0191BB22127001EC35A /* valid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C765C0181BB22127001EC35A /* valid_cassette.json */; settings = {ASSET_TAGS = (); }; };
+		C765C01B1BB2222E001EC35A /* invalid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C765C01A1BB2222E001EC35A /* invalid_cassette.json */; settings = {ASSET_TAGS = (); }; };
 		C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D21BB215BD001AE0E5 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
+		C76E83D91BB21873001AE0E5 /* Network_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D81BB21873001AE0E5 /* Network_Test.swift */; settings = {ASSET_TAGS = (); }; };
+		C76E83DF1BB21BEA001AE0E5 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */; };
 		C7F5EE1E1BB0B3DA00FE6DB1 /* DemoCoimbra.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */; settings = {ASSET_TAGS = (); }; };
 		C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */; settings = {ASSET_TAGS = (); }; };
@@ -33,8 +39,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C76E83E21BB21D96001AE0E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C765C0151BB21EC6001EC35A /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
+		C765C0181BB22127001EC35A /* valid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_cassette.json; sourceTree = "<group>"; };
+		C765C01A1BB2222E001EC35A /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
 		C76E83D21BB215BD001AE0E5 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C76E83D81BB21873001AE0E5 /* Network_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network_Test.swift; sourceTree = "<group>"; };
+		C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
 		C7F5EE1A1BB0B3DA00FE6DB1 /* DemoCoimbra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoCoimbra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCoimbra.h; sourceTree = "<group>"; };
 		C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76E83DF1BB21BEA001AE0E5 /* Decodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */,
 				C7F5EE251BB0B3DA00FE6DB1 /* DemoCoimbra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +109,8 @@
 		C7F5EE101BB0B3DA00FE6DB1 = {
 			isa = PBXGroup;
 			children = (
+				C765C0151BB21EC6001EC35A /* DVR.framework */,
+				C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */,
 				C7F5EE1C1BB0B3DA00FE6DB1 /* DemoCoimbra */,
 				C7F5EE281BB0B3DA00FE6DB1 /* DemoCoimbraTests */,
 				C7F5EE1B1BB0B3DA00FE6DB1 /* Products */,
@@ -115,6 +143,7 @@
 				C7F5EE481BB0C19B00FE6DB1 /* TestingUtility.swift */,
 				C7F5EE431BB0BF6E00FE6DB1 /* MockData */,
 				C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */,
+				C76E83D81BB21873001AE0E5 /* Network_Test.swift */,
 				C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */,
 			);
 			path = DemoCoimbraTests;
@@ -123,6 +152,8 @@
 		C7F5EE431BB0BF6E00FE6DB1 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
+				C765C01A1BB2222E001EC35A /* invalid_cassette.json */,
+				C765C0181BB22127001EC35A /* valid_cassette.json */,
 				C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */,
 				C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */,
 			);
@@ -215,6 +246,7 @@
 				C7F5EE201BB0B3DA00FE6DB1 /* Sources */,
 				C7F5EE211BB0B3DA00FE6DB1 /* Frameworks */,
 				C7F5EE221BB0B3DA00FE6DB1 /* Resources */,
+				C76E83E21BB21D96001AE0E5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -275,7 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */,
+				C765C0191BB22127001EC35A /* valid_cassette.json in Resources */,
 				C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */,
+				C765C01B1BB2222E001EC35A /* invalid_cassette.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +354,7 @@
 			files = (
 				C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */,
 				C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */,
+				C76E83D91BB21873001AE0E5 /* Network_Test.swift in Sources */,
 				C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Carthage/Build/iOS/",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -489,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Carthage/Build/iOS/",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

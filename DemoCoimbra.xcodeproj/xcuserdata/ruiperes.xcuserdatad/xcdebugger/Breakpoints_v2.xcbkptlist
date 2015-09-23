@@ -19,5 +19,213 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbraTests/Network_Test.swift"
+            timestampString = "464658770.061884"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "testValidRequest()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Network_Test.(testValidRequest (DemoCoimbraTests.Network_Test) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Network_Test.swift"
+                  timestampString = "464659369.611234"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Network_Test.(testValidRequest (DemoCoimbraTests.Network_Test) -&gt; () -&gt; ()).(closure #1).(implicit closure #1)"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Network_Test.swift"
+                  timestampString = "464659369.611674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbra/Components/Network/Network.swift"
+            timestampString = "464659369.295447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "makeConnection(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbra.Network.makeConnection (DemoCoimbra.Network)(ObjectiveC.NSURLRequest, completion : (Swift.Optional&lt;ObjectiveC.NSData&gt;, Swift.Optional&lt;DemoCoimbra.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DemoCoimbra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbra/Components/Network/Network.swift"
+                  timestampString = "464659369.620039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbra.Network.(makeConnection (DemoCoimbra.Network) -&gt; (ObjectiveC.NSURLRequest, completion : (Swift.Optional&lt;ObjectiveC.NSData&gt;, Swift.Optional&lt;DemoCoimbra.Error&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "DemoCoimbra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbra/Components/Network/Network.swift"
+                  timestampString = "464659369.620332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbra/Components/Network/Network.swift"
+            timestampString = "464659201.173767"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "makeConnection(_:completion:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbra.Network.makeConnection (DemoCoimbra.Network)(ObjectiveC.NSURLRequest, completion : (Swift.Optional&lt;ObjectiveC.NSData&gt;, Swift.Optional&lt;DemoCoimbra.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DemoCoimbra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbra/Components/Network/Network.swift"
+                  timestampString = "464659369.620624"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbra.Network.(makeConnection (DemoCoimbra.Network) -&gt; (ObjectiveC.NSURLRequest, completion : (Swift.Optional&lt;ObjectiveC.NSData&gt;, Swift.Optional&lt;DemoCoimbra.Error&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "DemoCoimbra"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbra/Components/Network/Network.swift"
+                  timestampString = "464659369.620826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbraTests/Network_Test.swift"
+            timestampString = "464659337.134937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "testInvalidRequest()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Network_Test.(testInvalidRequest (DemoCoimbraTests.Network_Test) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Network_Test.swift"
+                  timestampString = "464659369.612147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoCoimbraTests.Network_Test.(testInvalidRequest (DemoCoimbraTests.Network_Test) -&gt; () -&gt; ()).(closure #1).(implicit closure #1)"
+                  moduleName = "DemoCoimbraTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruiperes/Documents/Demo/DemoCoimbra/DemoCoimbraTests/Network_Test.swift"
+                  timestampString = "464659369.612341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoCoimbra/Components/Network/Network.swift"
+            timestampString = "464659369.295447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "makeConnection(_:completion:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

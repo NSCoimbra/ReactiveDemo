@@ -7,9 +7,7 @@
 //
 
 import XCTest
-
 import Decodable
-import Result
 @testable import DemoCoimbra
 
 class Parse_Test: XCTestCase {

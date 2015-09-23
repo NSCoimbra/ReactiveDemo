@@ -1,0 +1,31 @@
+{
+    "interactions" : [
+                      {
+                      "recorded_at" : 1442841389.732473,
+                      "response" : {
+                      "body" : "",
+                      "status" : 404,
+                      "url" : "https://dl.dropboxusercontent.com/u/14102938/404",
+                      "headers" : {
+                      "Pragma" : "no-cache",
+                      "Content-Type" : "text\/html;charset=ISO-8859-1",
+                      "Server" : "Jetty(7.x.y-SNAPSHOT)",
+                      "Connection" : "keep-alive",
+                      "Vary" : "User-Agent",
+                      "Date" : "Mon, 21 Sep 2015 13:16:28 GMT",
+                      "Content-Length" : "1281",
+                      "Cache-Control" : "max-age=0, no-cache, no-store",
+                      "Expires" : "Mon, 21 Sep 2015 13:16:28 GMT"
+                      }
+                      },
+                      "request" : {
+                      "method" : "GET",
+                      "url" : "https://dl.dropboxusercontent.com/u/14102938/404",
+                      "headers" : {
+                      
+                      }
+                      }
+                      }
+                      ],
+    "name" : "invalid_cassette"
+}
