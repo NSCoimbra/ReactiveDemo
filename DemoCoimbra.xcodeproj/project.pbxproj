@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		C726C0281BB422200012BF08 /* OrdersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0271BB422200012BF08 /* OrdersFetcher.swift */; settings = {ASSET_TAGS = (); }; };
 		C726C02A1BB424AD0012BF08 /* OrdersFetcher_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */; settings = {ASSET_TAGS = (); }; };
+		C726C02C1BB4517D0012BF08 /* valid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C726C02B1BB4517D0012BF08 /* valid_cassette.json */; settings = {ASSET_TAGS = (); }; };
+		C726C02E1BB452440012BF08 /* invalid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C726C02D1BB452440012BF08 /* invalid_cassette.json */; settings = {ASSET_TAGS = (); }; };
 		C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; };
 		C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C765C0191BB22127001EC35A /* valid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C765C0181BB22127001EC35A /* valid_cassette.json */; settings = {ASSET_TAGS = (); }; };
-		C765C01B1BB2222E001EC35A /* invalid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C765C01A1BB2222E001EC35A /* invalid_cassette.json */; settings = {ASSET_TAGS = (); }; };
 		C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D21BB215BD001AE0E5 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
 		C76E83D91BB21873001AE0E5 /* Network_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D81BB21873001AE0E5 /* Network_Test.swift */; settings = {ASSET_TAGS = (); }; };
 		C76E83DF1BB21BEA001AE0E5 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */; };
@@ -57,9 +57,9 @@
 /* Begin PBXFileReference section */
 		C726C0271BB422200012BF08 /* OrdersFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFetcher.swift; sourceTree = "<group>"; };
 		C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFetcher_Test.swift; sourceTree = "<group>"; };
+		C726C02B1BB4517D0012BF08 /* valid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_cassette.json; sourceTree = "<group>"; };
+		C726C02D1BB452440012BF08 /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
 		C765C0151BB21EC6001EC35A /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
-		C765C0181BB22127001EC35A /* valid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_cassette.json; sourceTree = "<group>"; };
-		C765C01A1BB2222E001EC35A /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
 		C76E83D21BB215BD001AE0E5 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C76E83D81BB21873001AE0E5 /* Network_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network_Test.swift; sourceTree = "<group>"; };
 		C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		C7F5EE431BB0BF6E00FE6DB1 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
-				C765C01A1BB2222E001EC35A /* invalid_cassette.json */,
-				C765C0181BB22127001EC35A /* valid_cassette.json */,
+				C726C02B1BB4517D0012BF08 /* valid_cassette.json */,
+				C726C02D1BB452440012BF08 /* invalid_cassette.json */,
 				C7F5EE4A1BB0C2E300FE6DB1 /* InvalidJSON.json */,
 				C7F5EE461BB0C18500FE6DB1 /* ValidJSON.json */,
 			);
@@ -313,9 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE471BB0C18500FE6DB1 /* ValidJSON.json in Resources */,
-				C765C0191BB22127001EC35A /* valid_cassette.json in Resources */,
+				C726C02C1BB4517D0012BF08 /* valid_cassette.json in Resources */,
 				C7F5EE4B1BB0C2E300FE6DB1 /* InvalidJSON.json in Resources */,
-				C765C01B1BB2222E001EC35A /* invalid_cassette.json in Resources */,
+				C726C02E1BB452440012BF08 /* invalid_cassette.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

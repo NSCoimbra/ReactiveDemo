@@ -1,33 +1,30 @@
 {
   "interactions" : [
     {
-      "recorded_at" : 1442965894.274587,
+      "recorded_at" : 1437571091.756155,
       "response" : {
-        "body" : "Optional([\n    {\n        \"id\": 1,\n        \"value\": 10,\n        \"description\": \"Awesome food!\"\n    },\n    {\n        \"id\": 2,\n        \"value\": 12,\n        \"description\": \"Awesome japanese!\"\n    },\n    {\n        \"id\": 3,\n        \"value\": 15,\n        \"description\": \"Would order again!!!\"\n    },\n    {\n        \"id\": 4,\n        \"value\": 33.1,\n        \"description\": \"Amazing food as usual!\"\n    },\n    {\n        \"id\": 5,\n        \"value\": 22.5,\n        \"description\": \"Hopefully they will send me free food one day!!!!\"\n    },\n    {\n        \"id\": 6,\n        \"value\": 9,\n        \"description\": \"I want more. :D\"\n    }\n])",
+        "body" : [{"id":1,"value":10,"description":"Awesome food!"},{"id":2,"value":12,"description":"Awesome japanese!"},{"id":3,"value":15,"description":"Would order again!!!"},{"id":4,"value":33.1,"description":"Amazing food as usual!"},{"id":5,"value":22.5,"description":"Hopefully they will send me free food one day!!!!"},{"id":6,"value":9,"description":"I want more. :D"}],
         "status" : 200,
-        "url" : "https:\/\/dl.dropboxusercontent.com\/u\/14102938\/ValidJSON.json",
+        "url" : "http://api.fun/Valid_JSON.json",
         "headers" : {
-          "Content-Type" : "text\/plain; charset=utf-8",
-          "Pragma" : "no-cache",
-          "Content-Disposition" : "inline; filename=\"ValidJSON.json\"; filename*=UTF-8''ValidJSON.json",
-          "x-server-response-time" : "141",
-          "Set-Cookie" : "uc_session=EkiLsE3EvGJJbtR3BlFzPzIdTJHZVCy2unYqKRMWpH2LGyCaJI3MJ8fouX5Tf8px; Domain=dropboxusercontent.com; httponly; Path=\/; secure",
-          "Server" : "nginx",
-          "Cache-Control" : "no-cache",
-          "Date" : "Tue, 22 Sep 2015 23:51:27 GMT",
-          "X-Robots-Tag" : "noindex, nofollow, noimageindex",
-          "x-dropbox-request-id" : "b9f8e7a0bd9f20b363d5bee9f0b670f3",
-          "Content-Length" : "603",
+          "Vary" : "Accept-Encoding",
+          "Content-Type" : "application\/json; charset=utf-8",
+          "Server" : "Jetty(7.x.y-SNAPSHOT)",
           "Connection" : "keep-alive",
-          "Accept-Ranges" : "bytes",
-          "Etag" : "281950n"
+          "Date" : "Wed, 22 Jul 2015 13:18:10 GMT",
+          "Content-Encoding" : "gzip",
+          "Content-Length" : "759",
+          "Etag" : "-798756580"
         }
       },
       "request" : {
         "method" : "GET",
-        "url" : "https:\/\/dl.dropboxusercontent.com\/u\/14102938\/ValidJSON.json"
+        "url" : "http://api.fun/Valid_JSON.json",
+        "headers" : {
+
+        }
       }
     }
   ],
-  "name" : "valid_cassette"
+  "name" : "settings_cassette"
 }

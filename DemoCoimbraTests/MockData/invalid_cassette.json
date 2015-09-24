@@ -1,31 +1,30 @@
 {
-    "interactions" : [
-                      {
-                      "recorded_at" : 1442841389.732473,
-                      "response" : {
-                      "body" : "",
-                      "status" : 404,
-                      "url" : "https://dl.dropboxusercontent.com/u/14102938/404",
-                      "headers" : {
-                      "Pragma" : "no-cache",
-                      "Content-Type" : "text\/html;charset=ISO-8859-1",
-                      "Server" : "Jetty(7.x.y-SNAPSHOT)",
-                      "Connection" : "keep-alive",
-                      "Vary" : "User-Agent",
-                      "Date" : "Mon, 21 Sep 2015 13:16:28 GMT",
-                      "Content-Length" : "1281",
-                      "Cache-Control" : "max-age=0, no-cache, no-store",
-                      "Expires" : "Mon, 21 Sep 2015 13:16:28 GMT"
-                      }
-                      },
-                      "request" : {
-                      "method" : "GET",
-                      "url" : "https://dl.dropboxusercontent.com/u/14102938/404",
-                      "headers" : {
-                      
-                      }
-                      }
-                      }
-                      ],
-    "name" : "invalid_cassette"
+  "interactions" : [
+    {
+      "recorded_at" : 1437571091.756155,
+      "response" : {
+        "body" : [{"id":"1",},{"value":12,"description":"Awesome japanese!"},{"id":"3","description":"Would order again!!!"},{"id":"4","value":33.1,"description":"Amazing food as usual!"},{"id":"5","value":22.5,},{"value":9,"description":"I want more. :D"}],
+        "status" : 404,
+        "url" : "http://api.fun/404",
+        "headers" : {
+          "Vary" : "Accept-Encoding",
+          "Content-Type" : "application\/json; charset=utf-8",
+          "Server" : "Jetty(7.x.y-SNAPSHOT)",
+          "Connection" : "keep-alive",
+          "Date" : "Wed, 22 Jul 2015 13:18:10 GMT",
+          "Content-Encoding" : "gzip",
+          "Content-Length" : "759",
+          "Etag" : "-798756580"
+        }
+      },
+      "request" : {
+        "method" : "GET",
+        "url" : "http://api.fun/404",
+        "headers" : {
+
+        }
+      }
+    }
+  ],
+  "name" : "settings_cassette"
 }

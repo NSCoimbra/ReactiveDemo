@@ -19,10 +19,30 @@ class Network {
         
         self.session = session
     }
-
+    
+    func makeConnection(request: NSURLRequest, numberOfRetries: Int, completion: (NSData?, Error?) ->()) {
+        
+        if (numberOfRetries < 0) {
+            completion(nil, .Networking)
+        }
+        else {
+            
+            makeConnection(request, completion: { _data, _error in
+                
+                if let data = _data {
+                    
+                    completion(data, nil)
+                }
+                else {
+                    self.makeConnection(request, numberOfRetries: numberOfRetries - 1, completion: completion)
+                }
+            })
+        }
+    }
+    
     func makeConnection(request: NSURLRequest, completion: (NSData?, Error?) ->()) {
         
-        session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> () in            
+        session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> () in
             
             var statusCode = 0
             if let response = response as? NSHTTPURLResponse {
@@ -38,7 +58,7 @@ class Network {
             } else {
                 completion(nil, .Networking)
             }
-
+            
         }).resume()
     }
 }

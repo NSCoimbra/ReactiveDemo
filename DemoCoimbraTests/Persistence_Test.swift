@@ -54,7 +54,7 @@ class Persistence_Test: XCTestCase {
             
             fileCreationDate(fileLocation, completion: {date, _ in
                 
-                let isLaterThan6Seconds = dateLaterThan(date!, minutes: 0.1)
+                let isLaterThan6Seconds = isDateLaterThan(date!, minutes: 0.1)
                 XCTAssertFalse(isLaterThan6Seconds)
             })
         })

@@ -8,7 +8,7 @@
 
 import Foundation
 
-func dateLaterThan(date : NSDate, minutes: NSTimeInterval) -> Bool {
+func isDateLaterThan(date : NSDate, minutes: NSTimeInterval) -> Bool {
     let minutesInSeconds = minutes * 60
     if abs(date.timeIntervalSinceNow) > minutesInSeconds {
         return true

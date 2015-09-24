@@ -15,11 +15,11 @@ class Network_Test: XCTestCase {
     func testValidRequest() {
         
         let expectation = self.expectationWithDescription("Expected valid response")
-        defer { self.waitForExpectationsWithTimeout(1.0, handler: nil) }
+        defer { self.waitForExpectationsWithTimeout(100.0, handler: nil) }
         
         let session = Session(cassetteName: "valid_cassette")
         let network = Network(session: session)
-        let request = NSURLRequest(URL: NSURL(string: "https://dl.dropboxusercontent.com/u/14102938/ValidJSON.json")!)
+        let request = NSURLRequest(URL: NSURL(string: "http://api.fun/Valid_JSON.json")!)
             
         network.makeConnection(request, completion: {data, error in
         
@@ -37,7 +37,7 @@ class Network_Test: XCTestCase {
         
         let session = Session(cassetteName: "invalid_cassette")
         let network = Network(session: session)
-        let request = NSURLRequest(URL: NSURL(string: "https://dl.dropboxusercontent.com/u/14102938/404")!)
+        let request = NSURLRequest(URL: NSURL(string: "http://api.fun/404")!)
         
         network.makeConnection(request, completion: {data, error in
             

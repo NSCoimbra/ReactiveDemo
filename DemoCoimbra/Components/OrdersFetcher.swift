@@ -21,7 +21,7 @@ class OrdersFetcher {
         self.persistenceFilePath = persistenceFilePath
     }
     
-    func fetchOrders(request: NSURLRequest, completion: ([Order]?, Error?)) {
+    func fetchOrders(request: NSURLRequest, completion: ([Order]?, Error?) -> ()) {
         
         // 1 -> Check if we got something in cache and it's not older than 5 minutes
         // 2 ---> If it's not older:
@@ -38,7 +38,42 @@ class OrdersFetcher {
         //   3.4.2 ----------> Parse it
         //   3.4.3 ----------> Call completion
         
-        
-        
+        fileCreationDate(self.persistenceFilePath, completion: { _date, _error in
+            
+            if let date = _date where isDateLaterThan(date, minutes: 5) == false { // 1
+                
+                readDataFromFile(self.persistenceFilePath, completion: { _data, _error in // 2
+                    
+                    if let data = _data { // 2.2
+                        self.parser(data, completion) // 2.2 & 2.3
+                    }
+                    else {
+                        completion(nil, _error)
+                    }
+                })
+            }
+            else { // 3
+                self.network.makeConnection(request, numberOfRetries: 1, completion: {_data, _error in // 3.1 & 3.2
+                    
+                    if let data = _data { // 3.4
+                        writeDataToFile(self.persistenceFilePath, data: data, completion: {_error in}) // 3.4.1
+                        self.parser(data, completion) // 3.4.2 & 3.4.3
+                    }
+                    else { // 3.3
+                        readDataFromFile(self.persistenceFilePath, completion: { _data, _error in // 2
+                            
+                            if let data = _data { // 2.2
+                                self.parser(data, completion) // 2.2 & 2.3
+                            }
+                            else {
+                                completion(nil, _error)
+                            }
+                        })
+                    }
+                })
+            }
+        })
     }
 }
+
+
