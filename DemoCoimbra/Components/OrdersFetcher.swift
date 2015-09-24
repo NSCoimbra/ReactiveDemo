@@ -21,7 +21,24 @@ class OrdersFetcher {
         self.persistenceFilePath = persistenceFilePath
     }
     
-    func fetchOrders(request: NSURLRequest) {
+    func fetchOrders(request: NSURLRequest, completion: ([Order]?, Error?)) {
+        
+        // 1 -> Check if we got something in cache and it's not older than 5 minutes
+        // 2 ---> If it's not older:
+        //  2.1 -----> Retrieve the data
+        //  2.2 -----> Parse it
+        //  2.3 -----> Call completion
+        // 3 ---> if it's older:
+        //  3.1 -----> Make internet connection
+        //  3.2 --------> If it fails, try to make new connection (go to 3.1)
+        //  3.3 --------> If it fails a second time try to retrieve anything from the cache (go to step 2.1)
+        //   3.3.1 ----------> If there isn't anything in cache, complete with error
+        //  3.4 --------> If it doesn't fail:
+        //   3.4.1 ----------> Persist the data
+        //   3.4.2 ----------> Parse it
+        //   3.4.3 ----------> Call completion
+        
+        
         
     }
 }
