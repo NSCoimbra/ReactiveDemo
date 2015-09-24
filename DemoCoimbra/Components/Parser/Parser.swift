@@ -9,15 +9,20 @@
 import Foundation
 import Decodable
 
+typealias ParseOrders = (NSData, ([Order]?, Error?) -> ()) -> ()
+
 func parseOrders(ordersData: NSData, completion: ([Order]?, Error?) -> ())  {
     
-    if let json = try? NSJSONSerialization.JSONObjectWithData(ordersData, options: NSJSONReadingOptions.MutableContainers),
-        let orders =  try? [Order].decode(json)
-    {
-        completion(orders,nil)
-    }
-    else {
-        completion(nil,.Parsing)
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+        
+        if let json = try? NSJSONSerialization.JSONObjectWithData(ordersData, options: NSJSONReadingOptions.MutableContainers),
+            let orders =  try? [Order].decode(json)
+        {
+            completion(orders,nil)
+        }
+        else {
+            completion(nil,.Parsing)
+        }
     }
 }
 

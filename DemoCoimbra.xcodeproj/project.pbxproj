@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C726C0281BB422200012BF08 /* OrdersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0271BB422200012BF08 /* OrdersFetcher.swift */; settings = {ASSET_TAGS = (); }; };
+		C726C02A1BB424AD0012BF08 /* OrdersFetcher_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */; settings = {ASSET_TAGS = (); }; };
 		C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; };
 		C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C765C0191BB22127001EC35A /* valid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C765C0181BB22127001EC35A /* valid_cassette.json */; settings = {ASSET_TAGS = (); }; };
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C726C0271BB422200012BF08 /* OrdersFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFetcher.swift; sourceTree = "<group>"; };
+		C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFetcher_Test.swift; sourceTree = "<group>"; };
 		C765C0151BB21EC6001EC35A /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
 		C765C0181BB22127001EC35A /* valid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_cassette.json; sourceTree = "<group>"; };
 		C765C01A1BB2222E001EC35A /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				C7F5EE411BB0BEB600FE6DB1 /* Parse_Test.swift */,
 				C76E83D81BB21873001AE0E5 /* Network_Test.swift */,
 				C7F5EE511BB0CA2300FE6DB1 /* Persistence_Test.swift */,
+				C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */,
 			);
 			path = DemoCoimbraTests;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		C7F5EE571BB0D16700FE6DB1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C726C0271BB422200012BF08 /* OrdersFetcher.swift */,
 				C76E83D11BB215B3001AE0E5 /* Network */,
 				C7F5EE581BB0D16700FE6DB1 /* Error */,
 				C7F5EE591BB0D16700FE6DB1 /* Model */,
@@ -339,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE621BB0D16700FE6DB1 /* Order.swift in Sources */,
+				C726C0281BB422200012BF08 /* OrdersFetcher.swift in Sources */,
 				C7F5EE641BB0D16700FE6DB1 /* Date+Extension.swift in Sources */,
 				C7F5EE611BB0D16700FE6DB1 /* Order+Decodable.swift in Sources */,
 				C7F5EE631BB0D16700FE6DB1 /* Parser.swift in Sources */,
@@ -353,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5EE521BB0CA2300FE6DB1 /* Persistence_Test.swift in Sources */,
+				C726C02A1BB424AD0012BF08 /* OrdersFetcher_Test.swift in Sources */,
 				C7F5EE421BB0BEB600FE6DB1 /* Parse_Test.swift in Sources */,
 				C76E83D91BB21873001AE0E5 /* Network_Test.swift in Sources */,
 				C7F5EE491BB0C19B00FE6DB1 /* TestingUtility.swift in Sources */,
