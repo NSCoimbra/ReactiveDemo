@@ -17,3 +17,12 @@ func isDateLaterThan(date : NSDate, laterThan minutes: NSTimeInterval) -> Bool {
     
     return false
 }
+
+func isDateLaterThan(date: NSDate, laterThan minutes: NSTimeInterval) -> SignalProducer<Bool, NoError> {
+    return SignalProducer {s , d in
+        let laterThan : Bool = isDateLaterThan(date, laterThan: minutes)
+        
+        sendNext(s, laterThan)
+        sendCompleted(s)
+    }
+}

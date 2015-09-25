@@ -9,6 +9,54 @@
 import Foundation
 import ReactiveCocoa
 
+func writeDataToFile(fullPath: String, data: NSData) -> SignalProducer<NSData, Error>  {
+    return SignalProducer {s, d in
+        
+        writeDataToFile(fullPath, data: data, completion: { _error in
+            
+            if let error = _error {
+                sendError(s, error)
+            }
+            else  {
+                sendNext(s, data)
+                sendCompleted(s)
+            }
+        })
+    }
+}
+
+func readDataFromFile(fullPath: String) -> SignalProducer<NSData, Error>  {
+    
+    return SignalProducer {s, d in
+        
+        readDataFromFile(fullPath, completion: { _data, _error in
+            
+            if let error = _error {
+                sendError(s, error)
+            }
+            else if let data = _data {
+                sendNext(s, data)
+                sendCompleted(s)
+            }
+        })
+    }
+}
+
+
+func fileCreationDate(fullPath: String) -> SignalProducer<NSDate, Error> {
+    return SignalProducer {s, d in
+        fileCreationDate(fullPath, completion: { _date, _error in
+            if let error = _error {
+                sendError(s, error)
+            }
+            else if let date = _date {
+                sendNext(s, date)
+                sendCompleted(s)
+            }
+        })
+    }
+}
+
 func writeDataToFile(fullPath: String, data: NSData, completion: (Error?) -> ()) {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
