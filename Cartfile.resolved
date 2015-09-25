@@ -1,3 +1,4 @@
-github "venmo/DVR" "v0.1.2"
+github "venmo/DVR" "v0.1.3"
 github "Anviking/Decodable" "v0.3.2"
 github "antitypical/Result" "0.5"
+github "reactivecocoa/ReactiveCocoa" "03ab0475a63be85a13ead109cf512d8bd22047fb"

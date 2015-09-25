@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Error {
+enum Error : ErrorType {
     
     case Parsing
     case Persistence

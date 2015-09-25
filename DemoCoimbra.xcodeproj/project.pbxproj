@@ -11,6 +11,8 @@
 		C726C02A1BB424AD0012BF08 /* OrdersFetcher_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */; settings = {ASSET_TAGS = (); }; };
 		C726C02C1BB4517D0012BF08 /* valid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C726C02B1BB4517D0012BF08 /* valid_cassette.json */; settings = {ASSET_TAGS = (); }; };
 		C726C02E1BB452440012BF08 /* invalid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C726C02D1BB452440012BF08 /* invalid_cassette.json */; settings = {ASSET_TAGS = (); }; };
+		C726C0931BB5AC1D0012BF08 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726C0911BB5AC1D0012BF08 /* ReactiveCocoa.framework */; };
+		C726C0941BB5AC1D0012BF08 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726C0921BB5AC1D0012BF08 /* Result.framework */; };
 		C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; };
 		C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D21BB215BD001AE0E5 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
@@ -59,6 +61,8 @@
 		C726C0291BB424AD0012BF08 /* OrdersFetcher_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFetcher_Test.swift; sourceTree = "<group>"; };
 		C726C02B1BB4517D0012BF08 /* valid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_cassette.json; sourceTree = "<group>"; };
 		C726C02D1BB452440012BF08 /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
+		C726C0911BB5AC1D0012BF08 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		C726C0921BB5AC1D0012BF08 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C765C0151BB21EC6001EC35A /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
 		C76E83D21BB215BD001AE0E5 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C76E83D81BB21873001AE0E5 /* Network_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network_Test.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C726C0931BB5AC1D0012BF08 /* ReactiveCocoa.framework in Frameworks */,
+				C726C0941BB5AC1D0012BF08 /* Result.framework in Frameworks */,
 				C76E83DF1BB21BEA001AE0E5 /* Decodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +119,8 @@
 		C7F5EE101BB0B3DA00FE6DB1 = {
 			isa = PBXGroup;
 			children = (
+				C726C0911BB5AC1D0012BF08 /* ReactiveCocoa.framework */,
+				C726C0921BB5AC1D0012BF08 /* Result.framework */,
 				C765C0151BB21EC6001EC35A /* DVR.framework */,
 				C76E83DE1BB21BEA001AE0E5 /* Decodable.framework */,
 				C7F5EE1C1BB0B3DA00FE6DB1 /* DemoCoimbra */,
@@ -330,6 +338,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Decodable.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 			);
 			outputPaths = (
 			);
