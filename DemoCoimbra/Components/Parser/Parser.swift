@@ -15,26 +15,14 @@ func parseOrders(ordersData: NSData, completion: ([Order]?, Error?) -> ())  {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
         
-        
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(ordersData, options: NSJSONReadingOptions.AllowFragments)
             let orders =  try [Order].decode(json)
             completion(orders,nil)
-
         }
-        catch let error {
+        catch _ {
             completion(nil,.Parsing)
         }
-        
-//        let json = try? NSJSONSerialization.JSONObjectWithData(ordersData, options: NSJSONReadingOptions.MutableContainers)
-//        if let _json = json,
-//            let orders =  try? [Order].decode(_json)
-//        {
-//            completion(orders,nil)
-//        }
-//        else {
-//            completion(nil,.Parsing)
-//        }
     }
 }
 
