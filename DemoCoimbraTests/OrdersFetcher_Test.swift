@@ -20,10 +20,10 @@ class OrdersFetcher_Test: XCTestCase {
     
     func test_validFetch_InternetRequest() {
         
-        let expectation = self.expectationWithDescription("Expected valid response")
+        let expectation = self.expectationWithDescription("Expected valid response from network")
         defer { self.waitForExpectationsWithTimeout(1.0, handler: nil) }
         
-        let (fetcher, request) = self.validNetwork_Fetcher()
+        let (fetcher, request) = self.fetcher(("valid_cassette","http://api.fun/Valid_JSON.json"))
         
         fetcher.fetchOrders(request, completion: {orders, error in
             
@@ -35,12 +35,17 @@ class OrdersFetcher_Test: XCTestCase {
         })
     }
     
-    func test_validFetch_FromPersistence() {
+    func test_validFetch_Persistence() {
         
-        let expectation = self.expectationWithDescription("Expected valid response")
+        let expectation = self.expectationWithDescription("Expected valid response from persistence")
         defer { self.waitForExpectationsWithTimeout(1.0, handler: nil) }
         
-        let (fetcher, request) = self.validNetwork_Fetcher()
+        let fileLocation = appendRelativePathToRoot(fileName)
+
+        let data = readFile("ValidJSON")
+        writeDataToFile(fileLocation, data: data, completion: {error in })
+        
+        let (fetcher, request) = self.fetcher(("invalid_cassette","http://api.fun/404"))
         
         fetcher.fetchOrders(request, completion: {orders, error in
             
@@ -51,17 +56,32 @@ class OrdersFetcher_Test: XCTestCase {
             expectation.fulfill()
         })
     }
-
     
-    private func validNetwork_Fetcher() -> (OrdersFetcher, NSURLRequest) {
+    func test_invalidFetch() {
         
-        let session = Session(cassetteName: "valid_cassette")
+        let expectation = self.expectationWithDescription("Expected valid response from persistence")
+        defer { self.waitForExpectationsWithTimeout(1.0, handler: nil) }
+        
+        let (fetcher, request) = self.fetcher(("invalid_cassette","http://api.fun/404"))
+        
+        fetcher.fetchOrders(request, completion: {orders, error in
+            
+            XCTAssertNotNil(error)
+            XCTAssertNil(orders)
+            
+            expectation.fulfill()
+        })
+    }
+    
+    private func fetcher(bundle: (cassette: String, endpoint: String)) -> (OrdersFetcher, NSURLRequest) {
+        
+        let session = Session(cassetteName: bundle.cassette)
         let network = Network(session: session)
         
         let fileLocation = appendRelativePathToRoot(fileName)
         
         let ordersFetcher = OrdersFetcher(network: network, persistenceFilePath: fileLocation)
-        let request = NSURLRequest(URL: NSURL(string: "http://api.fun/Valid_JSON.json")!)
+        let request = NSURLRequest(URL: NSURL(string: bundle.endpoint)!)
         
         return (ordersFetcher, request)
     }
