@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import ReactiveCocoa
 
 private let validStatusCode : Int -> Bool = { $0 >= 200 && $0 < 400 }
 
@@ -18,6 +18,23 @@ class Network {
     init(session: NSURLSession = NSURLSession.sharedSession()) {
         
         self.session = session
+    }
+    
+    func makeConnection(request: NSURLRequest) -> SignalProducer<NSData, Error> {
+        
+        return SignalProducer {s, d in
+        
+            self.makeConnection(request, completion: { _data, _error -> () in
+                
+                if let data = _data {
+                    sendNext(s, data)
+                    sendCompleted(s)
+                }
+                else if let error = _error  {
+                    sendError(s, error)
+                }
+            })
+        }
     }
     
     func makeConnection(request: NSURLRequest, numberOfRetries: Int, completion: (NSData?, Error?) ->()) {
