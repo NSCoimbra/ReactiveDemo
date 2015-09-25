@@ -38,19 +38,21 @@ class OrdersFetcher {
         //   3.4.2 ----------> Parse it
         //   3.4.3 ----------> Call completion
         
+        let readFileCompletion : (NSData?, Error?) ->() = {_data, _error in
+        
+            if let data = _data { // 2.2
+                self.parser(data, completion) // 2.2 & 2.3
+            }
+            else {
+                completion(nil, _error)
+            }
+        }
+        
         fileCreationDate(self.persistenceFilePath, completion: { _date, _error in
             
             if let date = _date where isDateLaterThan(date, minutes: 5) == false { // 1
                 
-                readDataFromFile(self.persistenceFilePath, completion: { _data, _error in // 2
-                    
-                    if let data = _data { // 2.2
-                        self.parser(data, completion) // 2.2 & 2.3
-                    }
-                    else {
-                        completion(nil, _error)
-                    }
-                })
+                readDataFromFile(self.persistenceFilePath, completion: readFileCompletion) // 2
             }
             else { // 3
                 self.network.makeConnection(request, numberOfRetries: 1, completion: {_data, _error in // 3.1 & 3.2
@@ -60,15 +62,7 @@ class OrdersFetcher {
                         self.parser(data, completion) // 3.4.2 & 3.4.3
                     }
                     else { // 3.3
-                        readDataFromFile(self.persistenceFilePath, completion: { _data, _error in // 2
-                            
-                            if let data = _data { // 2.2
-                                self.parser(data, completion) // 2.2 & 2.3
-                            }
-                            else {
-                                completion(nil, _error)
-                            }
-                        })
+                        readDataFromFile(self.persistenceFilePath, completion: readFileCompletion) // 2
                     }
                 })
             }
