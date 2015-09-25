@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ReactiveCocoa
 
-func isDateLaterThan(date : NSDate, minutes: NSTimeInterval) -> Bool {
+func isDateLaterThan(date : NSDate, laterThan minutes: NSTimeInterval) -> Bool {
     let minutesInSeconds = minutes * 60
     if abs(date.timeIntervalSinceNow) > minutesInSeconds {
         return true
@@ -16,3 +17,18 @@ func isDateLaterThan(date : NSDate, minutes: NSTimeInterval) -> Bool {
     
     return false
 }
+
+func isDate(date: NSDate, laterThan minutes: NSTimeInterval) -> SignalProducer<Bool, Error> {
+    return SignalProducer {s , d in
+        let laterThan : Bool = isDateLaterThan(date, laterThan: minutes)
+        
+        if laterThan {
+            sendNext(s, true)
+            sendCompleted(s)
+        }
+        else {
+            sendError(s, .Persistence)
+        }
+    }
+}
+

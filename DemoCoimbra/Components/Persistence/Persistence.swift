@@ -57,17 +57,6 @@ func fileCreationDate(fullPath: String) -> SignalProducer<NSDate, Error> {
     }
 }
 
-func doesFileExists(fullPath: String) -> SignalProducer<Bool, NoError>  {
-    
-    return SignalProducer {s, d in
-        doesFileExists(fullPath, completion: { doesFileExist in
-        
-            sendNext(s, doesFileExist)
-            sendCompleted(s)
-        })
-    }
-}
-
 func writeDataToFile(fullPath: String, data: NSData, completion: (Error?) -> ()) {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
@@ -110,11 +99,6 @@ func fileCreationDate(fullPath: String, completion: (NSDate?, Error?) -> ()) {
             completion(nil, .Persistence)
         }
     }
-}
-
-func doesFileExists(fullPath: String, completion: Bool -> ())  {
-    
-    return completion(NSFileManager().fileExistsAtPath(fullPath))
 }
 
 func appendRelativePathToRoot(relativePath: String, rootPath: String = documentsRootPath) -> String {

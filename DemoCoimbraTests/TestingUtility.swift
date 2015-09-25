@@ -23,4 +23,9 @@ func removeTestFile(testFileName : String) {
     }
 }
 
+func doesFileExists(fullPath: String) -> Bool   {
+    
+    return NSFileManager().fileExistsAtPath(fullPath)
+}
+
 private class JSONFileReader { }

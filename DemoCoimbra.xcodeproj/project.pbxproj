@@ -13,6 +13,8 @@
 		C726C02E1BB452440012BF08 /* invalid_cassette.json in Resources */ = {isa = PBXBuildFile; fileRef = C726C02D1BB452440012BF08 /* invalid_cassette.json */; settings = {ASSET_TAGS = (); }; };
 		C726C0931BB5AC1D0012BF08 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726C0911BB5AC1D0012BF08 /* ReactiveCocoa.framework */; };
 		C726C0941BB5AC1D0012BF08 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C726C0921BB5AC1D0012BF08 /* Result.framework */; };
+		C726C0971BB5B16D0012BF08 /* RAC_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0961BB5B16D0012BF08 /* RAC_Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		C726C0991BB5B2A90012BF08 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726C0981BB5B2A90012BF08 /* Utility.swift */; settings = {ASSET_TAGS = (); }; };
 		C765C0161BB21EC6001EC35A /* DVR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; };
 		C765C0171BB21ECE001EC35A /* DVR.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C765C0151BB21EC6001EC35A /* DVR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E83D21BB215BD001AE0E5 /* Network.swift */; settings = {ASSET_TAGS = (); }; };
@@ -63,6 +65,8 @@
 		C726C02D1BB452440012BF08 /* invalid_cassette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_cassette.json; sourceTree = "<group>"; };
 		C726C0911BB5AC1D0012BF08 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		C726C0921BB5AC1D0012BF08 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C726C0961BB5B16D0012BF08 /* RAC_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC_Extensions.swift; sourceTree = "<group>"; };
+		C726C0981BB5B2A90012BF08 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		C765C0151BB21EC6001EC35A /* DVR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVR.framework; path = Carthage/Build/iOS/DVR.framework; sourceTree = "<group>"; };
 		C76E83D21BB215BD001AE0E5 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C76E83D81BB21873001AE0E5 /* Network_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network_Test.swift; sourceTree = "<group>"; };
@@ -108,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C726C0951BB5B1650012BF08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C726C0961BB5B16D0012BF08 /* RAC_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C76E83D11BB215B3001AE0E5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				C7F5EE1D1BB0B3DA00FE6DB1 /* DemoCoimbra.h */,
+				C726C0981BB5B2A90012BF08 /* Utility.swift */,
+				C726C0951BB5B1650012BF08 /* Extensions */,
 				C7F5EE571BB0D16700FE6DB1 /* Components */,
 				C7F5EE1F1BB0B3DA00FE6DB1 /* Info.plist */,
 			);
@@ -358,8 +372,10 @@
 				C7F5EE641BB0D16700FE6DB1 /* Date+Extension.swift in Sources */,
 				C7F5EE611BB0D16700FE6DB1 /* Order+Decodable.swift in Sources */,
 				C7F5EE631BB0D16700FE6DB1 /* Parser.swift in Sources */,
+				C726C0991BB5B2A90012BF08 /* Utility.swift in Sources */,
 				C7F5EE671BB0D16F00FE6DB1 /* Error.swift in Sources */,
 				C76E83D31BB215BD001AE0E5 /* Network.swift in Sources */,
+				C726C0971BB5B16D0012BF08 /* RAC_Extensions.swift in Sources */,
 				C7F5EE651BB0D16700FE6DB1 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
